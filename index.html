@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PrimeBitCards - Buy Gift Cards with Crypto</title>
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f8fa;
+      color: #222;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    a {
+      color: #0077ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Container */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem;
+      flex-grow: 1;
+    }
+
+    /* Hero Section */
+    header.hero {
+      text-align: center;
+      padding: 4rem 1rem 3rem;
+      background: #0077ff;
+      color: white;
+      border-radius: 0 0 1.5rem 1.5rem;
+    }
+    header.hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    header.hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      font-weight: 500;
+    }
+    header.hero .btn-primary {
+      background: white;
+      color: #0077ff;
+      font-weight: 600;
+      padding: 0.75rem 2rem;
+      border-radius: 9999px;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 12px rgb(0 119 255 / 0.35);
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+    header.hero .btn-primary:hover {
+      background: #e0e7ff;
+    }
+
+    /* Features */
+    section.features {
+      margin: 3rem 0;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr;
+    }
+    @media(min-width: 640px) {
+      section.features {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    section.features article {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 6px 15px rgb(0 0 0 / 0.05);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    section.features article:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgb(0 0 0 / 0.1);
+    }
+    section.features h3 {
+      margin-bottom: 1rem;
+      color: #0077ff;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    section.features p {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    /* Disclaimer */
+    footer.disclaimer {
+      font-size: 0.875rem;
+      color: #666;
+      padding: 1rem 1rem 2rem;
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>PrimeBitCards</h1>
+    <p>Your one-stop platform to buy gift cards, recharge mobile phones, and trade P2P using cryptocurrency.</p>
+    <a href="https://t.me/PrimeBitCardsBot" class="btn-primary" target="_blank" rel="noopener">Start Buying Now</a>
+  </header>
+
+  <main class="container">
+    <section class="features" aria-label="Key Features">
+      <article>
+        <h3>Gift Cards</h3>
+        <p>Instantly purchase a wide variety of gift cards using Bitcoin and other cryptocurrencies — no middlemen.</p>
+      </article>
+      <article>
+        <h3>Mobile Recharge</h3>
+        <p>Recharge your phone on top mobile networks worldwide with crypto, safely and quickly.</p>
+      </article>
+      <article>
+        <h3>Peer-to-Peer Trading</h3>
+        <p>Buy and sell gift cards and crypto directly with other users, with secure escrow support.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="disclaimer">
+    <p>PrimeBitCards is a cryptocurrency-based service. Please use responsibly and comply with local regulations. We are not liable for losses due to misuse or third-party interactions.</p>
+  </footer>
+</body>
+</html>
