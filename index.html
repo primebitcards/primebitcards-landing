@@ -44,6 +44,7 @@
       background: #0077ff;
       color: white;
       border-radius: 0 0 1.5rem 1.5rem;
+      position: relative;
     }
     header.hero h1 {
       font-size: 2.5rem;
@@ -71,6 +72,22 @@
       background: #e0e7ff;
     }
 
+    /* Social Icons */
+    .social-icons {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .social-icons a {
+      font-size: 1.5rem;
+      color: white;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #ffdd57;
+    }
+
     /* Features */
     section.features {
       margin: 3rem 0;
@@ -80,7 +97,12 @@
     }
     @media(min-width: 640px) {
       section.features {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media(min-width: 960px) {
+      section.features {
+        grid-template-columns: repeat(4, 1fr);
       }
     }
     section.features article {
@@ -122,7 +144,12 @@
   <header class="hero">
     <h1>PrimeBitCards</h1>
     <p>Your one-stop platform to buy gift cards, recharge mobile phones, and trade P2P using cryptocurrency.</p>
-    <a href="https://t.me/PrimeBitCards_Bot" class="btn-primary" target="_blank" rel="noopener">Start Buying Now</a>
+    <a href="https://t.me/PrimeBitCardsBot" class="btn-primary" target="_blank" rel="noopener">Start Buying Now</a>
+
+    <div class="social-icons">
+      <a href="https://x.com/PrimeBitCards" target="_blank" title="Follow us on X">🕊️</a>
+      <a href="https://t.me/PrimeBitCards_admin" target="_blank" title="Support on Telegram">💬</a>
+    </div>
   </header>
 
   <main class="container">
@@ -138,6 +165,10 @@
       <article>
         <h3>Peer-to-Peer Trading</h3>
         <p>Buy and sell gift cards and crypto directly with other users, with secure escrow support.</p>
+      </article>
+      <article>
+        <h3>24/7 Support</h3>
+        <p>Need help? We're available around the clock to assist you with your transactions.</p>
       </article>
     </section>
   </main>
