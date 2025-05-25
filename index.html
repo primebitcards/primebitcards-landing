@@ -79,13 +79,15 @@
       justify-content: center;
       gap: 1.5rem;
     }
-    .social-icons a {
-      font-size: 1.5rem;
-      color: white;
-      transition: color 0.3s ease;
+    .social-icons a svg {
+      transition: transform 0.2s ease, fill 0.3s ease;
+      fill: white;
+      width: 28px;
+      height: 28px;
     }
-    .social-icons a:hover {
-      color: #ffdd57;
+    .social-icons a:hover svg {
+      transform: scale(1.15);
+      fill: #ffdd57;
     }
 
     /* Features */
@@ -147,8 +149,16 @@
     <a href="https://t.me/PrimeBitCardsBot" class="btn-primary" target="_blank" rel="noopener">Start Buying Now</a>
 
     <div class="social-icons">
-      <a href="https://x.com/PrimeBitCards" target="_blank" title="Follow us on X">🕊️</a>
-      <a href="https://t.me/PrimeBitCards_admin" target="_blank" title="Support on Telegram">💬</a>
+      <a href="https://x.com/PrimeBitCards" target="_blank" title="Follow us on X" aria-label="X">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M22.162 2H1.838C1.375 2 1 2.375 1 2.838v18.324C1 21.625 1.375 22 1.838 22h20.324c.463 0 .838-.375.838-.838V2.838C23 2.375 22.625 2 22.162 2zM18.25 17.25h-1.5l-2.5-3-2 3h-1.5l2-3-2-3h1.5l2 3 2.5-3h1.5l-2.5 3 2.5 3z"/>
+        </svg>
+      </a>
+      <a href="https://t.me/PrimeBitCards_admin" target="_blank" title="Telegram Support" aria-label="Telegram">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M21.05 2.29 2.78 9.24c-1.17.45-1.16 1.14-.21 1.45l4.94 1.55 2.18 6.62c.28.83.52 1.16 1.17 1.16.77 0 1.09-.3 1.51-.66l3.63-3.36 4.83 3.55c.89.49 1.53.23 1.75-.82L23.91 3.6c.28-1.35-.51-1.96-1.49-1.31l.63.01z"/>
+        </svg>
+      </a>
     </div>
   </header>
 
