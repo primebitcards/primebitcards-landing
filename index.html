@@ -3,142 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PrimeBitCards – Gift Cards with Crypto</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>PrimeBitCards – Instant Gift Cards</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #0e0e0e;
-      color: #fff;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background-color: #121212;
+      color: #f1f1f1;
+      line-height: 1.6;
+      overflow-x: hidden;
     }
     header {
+      background: #1e1e1e;
+      padding: 2rem;
       text-align: center;
-      padding: 3rem 1rem 2rem;
     }
     header h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: #00ffd1;
+      font-size: 2rem;
+      color: #00ffa6;
     }
     header p {
-      font-size: 1.1rem;
+      font-size: 1rem;
+      margin-top: 0.5rem;
       color: #ccc;
-      max-width: 600px;
-      margin: 1rem auto;
+    }
+    .card {
+      margin: 2rem auto;
+      max-width: 500px;
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 0 15px rgba(0, 255, 166, 0.1);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .card h2 {
+      color: #00ffa6;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #ddd;
+      font-size: 1rem;
     }
     .cta {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.75rem 2rem;
-      background: #00ffd1;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .cta a {
+      background: #00ffa6;
       color: #000;
-      border-radius: 8px;
-      font-weight: 600;
+      padding: 1rem 2rem;
+      border-radius: 30px;
       text-decoration: none;
-      transition: 0.3s ease;
-    }
-    .cta:hover {
-      background: #00e2ba;
-    }
-    .features {
-      padding: 3rem 1rem;
-      background: #161616;
-    }
-    .features h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .feature {
-      background: #1e1e1e;
-      padding: 1.5rem;
-      border-radius: 12px;
-      border: 1px solid #2c2c2c;
-    }
-    .feature h3 {
-      margin-top: 0;
-      color: #00ffd1;
-    }
-    .faq {
-      padding: 3rem 1rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .faq h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-    }
-    .faq-item {
-      margin-bottom: 1.5rem;
-    }
-    .faq-item h4 {
-      margin: 0 0 0.5rem;
-      color: #00ffd1;
+      font-weight: bold;
+      box-shadow: 0 0 10px #00ffa6;
     }
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      font-size: 0.9rem;
       color: #666;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Buy Gift Cards with Crypto</h1>
-    <p>Shop effortlessly with your crypto. No signups, no delays — just fast, secure gift card purchases via Telegram.</p>
-    <a href="https://t.me/PrimeBitCards_bot" class="cta">Launch Bot</a>
+    <h1>PrimeBitCards</h1>
+    <p>Buy Gift Cards Instantly Using Crypto</p>
   </header>
 
-  <section class="features">
-    <h2>Why PrimeBitCards?</h2>
-    <div class="feature-grid">
-      <div class="feature">
-        <h3>Instant Delivery</h3>
-        <p>Get your gift card code within minutes after payment confirmation.</p>
-      </div>
-      <div class="feature">
-        <h3>Top Brands</h3>
-        <p>Amazon, Flipkart, Swiggy, Zomato, and many more — all in one place.</p>
-      </div>
-      <div class="feature">
-        <h3>Crypto Friendly</h3>
-        <p>Pay directly with USDT or other supported coins. No banks needed.</p>
-      </div>
-      <div class="feature">
-        <h3>Reward Points</h3>
-        <p>Earn 1% reward points on every purchase. More shopping, more perks!</p>
-      </div>
-    </div>
+  <section class="card">
+    <h2>🎁 Categories We Cover</h2>
+    <p>Food, Shopping, Entertainment — explore popular categories to match your lifestyle.</p>
   </section>
 
-  <section class="faq">
-    <h2>FAQs</h2>
-    <div class="faq-item">
-      <h4>Is KYC required?</h4>
-      <p>No KYC, no signup. Just crypto and your Telegram.</p>
-    </div>
-    <div class="faq-item">
-      <h4>How do I pay?</h4>
-      <p>USDT on TRC20 or ERC20 supported. Other tokens coming soon.</p>
-    </div>
-    <div class="faq-item">
-      <h4>Is it safe?</h4>
-      <p>Yes, transactions are private and processed securely.</p>
-    </div>
+  <section class="card">
+    <h2>⚡ Instant Delivery or Compensation</h2>
+    <p>Get your gift card fast — or receive compensation if delayed. <br><small>(T&C Apply, active 10AM–8PM)</small></p>
   </section>
+
+  <section class="card">
+    <h2>💬 24x7 Customer Support</h2>
+    <p>We’re always here to help. Day or night, our support team is ready for you.</p>
+  </section>
+
+  <div class="cta">
+    <a href="https://t.me/PrimeBitCards_bot" target="_blank">Open Telegram Bot</a>
+  </div>
 
   <footer>
-    &copy; 2025 PrimeBitCards – Crypto to Gift Card made simple.
+    <p>&copy; 2025 PrimeBitCards. All rights reserved.</p>
   </footer>
 </body>
 </html>
