@@ -2,199 +2,143 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PrimeBitCards - Buy Gift Cards with Crypto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrimeBitCards – Gift Cards with Crypto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    /* Reset & base */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f5f8fa;
-      color: #222;
-      line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0e0e0e;
+      color: #fff;
     }
-    a {
-      color: #0077ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Container */
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 1.5rem 1rem;
-      flex-grow: 1;
-    }
-
-    /* Hero Section */
-    header.hero {
+    header {
       text-align: center;
-      padding: 4rem 1rem 3rem;
-      background: #0077ff;
-      color: white;
-      border-radius: 0 0 1.5rem 1.5rem;
-      position: relative;
+      padding: 3rem 1rem 2rem;
     }
-    header.hero h1 {
+    header h1 {
       font-size: 2.5rem;
-      margin-bottom: 1rem;
-      font-weight: 700;
+      font-weight: 800;
+      color: #00ffd1;
     }
-    header.hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto 2rem;
-      font-weight: 500;
-    }
-    header.hero .btn-primary {
-      background: white;
-      color: #0077ff;
-      font-weight: 600;
-      padding: 0.75rem 2rem;
-      border-radius: 9999px;
+    header p {
       font-size: 1.1rem;
-      box-shadow: 0 4px 12px rgb(0 119 255 / 0.35);
-      transition: background-color 0.3s ease;
-      display: inline-block;
-    }
-    header.hero .btn-primary:hover {
-      background: #e0e7ff;
-    }
-
-    /* Social Icons */
-    .social-icons {
-      margin-top: 1.5rem;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-    }
-    .social-icons a svg {
-      transition: transform 0.2s ease, fill 0.3s ease;
-      fill: white;
-      width: 28px;
-      height: 28px;
-    }
-    .social-icons a:hover svg {
-      transform: scale(1.15);
-      fill: #ffdd57;
-    }
-
-    /* Features */
-    section.features {
-      margin: 3rem 0;
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: 1fr;
-    }
-    @media(min-width: 640px) {
-      section.features {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    @media(min-width: 960px) {
-      section.features {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-    section.features article {
-      background: white;
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 6px 15px rgb(0 0 0 / 0.05);
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-    section.features article:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 25px rgb(0 0 0 / 0.1);
-    }
-    section.features h3 {
-      margin-bottom: 1rem;
-      color: #0077ff;
-      font-size: 1.25rem;
-      font-weight: 700;
-    }
-    section.features p {
-      font-size: 1rem;
-      color: #444;
-    }
-
-    /* Disclaimer */
-    footer.disclaimer {
-      font-size: 0.875rem;
-      color: #666;
-      padding: 1rem 1rem 2rem;
-      text-align: center;
+      color: #ccc;
       max-width: 600px;
+      margin: 1rem auto;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 2rem;
+      background: #00ffd1;
+      color: #000;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+    .cta:hover {
+      background: #00e2ba;
+    }
+    .features {
+      padding: 3rem 1rem;
+      background: #161616;
+    }
+    .features h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
       margin: 0 auto;
-      line-height: 1.4;
+    }
+    .feature {
+      background: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid #2c2c2c;
+    }
+    .feature h3 {
+      margin-top: 0;
+      color: #00ffd1;
+    }
+    .faq {
+      padding: 3rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .faq-item {
+      margin-bottom: 1.5rem;
+    }
+    .faq-item h4 {
+      margin: 0 0 0.5rem;
+      color: #00ffd1;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <header class="hero">
-    <h1>PrimeBitCards</h1>
-    <p>Your one-stop platform to buy gift cards, recharge mobile phones, and trade P2P using cryptocurrency.</p>
-    <a href="https://t.me/primebitcards_bot?start=ref_1030634827" class="btn-primary" target="_blank" rel="noopener">Start Buying Now</a>
-
-<div class="social-icons">
-  <!-- X Icon -->
-  <a href="https://x.com/PrimeBitCards" target="_blank" title="Follow us on X" aria-label="X">
-    <svg viewBox="0 0 24 24" fill="currentColor">
-      <path d="M22.162 2H1.838C1.375 2 1 2.375 1 2.838v18.324C1 21.625 1.375 22 1.838 22h20.324c.463 0 .838-.375.838-.838V2.838C23 2.375 22.625 2 22.162 2zM18.25 17.25h-1.5l-2.5-3-2 3h-1.5l2-3-2-3h1.5l2 3 2.5-3h1.5l-2.5 3 2.5 3z"/>
-    </svg>
-  </a>
-
-  <!-- Telegram Icon (Main Channel) -->
-  <a href="https://t.me/PrimeBitCards" target="_blank" title="Join us on Telegram" aria-label="Telegram">
-    <svg viewBox="0 0 24 24" fill="currentColor">
-      <path d="M21.05 2.29 2.78 9.24c-1.17.45-1.16 1.14-.21 1.45l4.94 1.55 2.18 6.62c.28.83.52 1.16 1.17 1.16.77 0 1.09-.3 1.51-.66l3.63-3.36 4.83 3.55c.89.49 1.53.23 1.75-.82L23.91 3.6c.28-1.35-.51-1.96-1.49-1.31l.63.01z"/>
-    </svg>
-  </a>
-
-  <!-- Support Icon -->
-  <a href="https://t.me/PrimeBitCards_admin" target="_blank" title="Contact Support" aria-label="Support">
-    <svg viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 2a10 10 0 0 0-10 10v1a2 2 0 0 0 2 2h1v-6H4a8 8 0 0 1 16 0h-1v6h1a2 2 0 0 0 2-2v-1a10 10 0 0 0-10-10zm-1 14h2v2h-2v-2z"/>
-    </svg>
-  </a>
-</div>
+  <header>
+    <h1>Buy Gift Cards with Crypto</h1>
+    <p>Shop effortlessly with your crypto. No signups, no delays — just fast, secure gift card purchases via Telegram.</p>
+    <a href="https://t.me/PrimeBitCards_bot" class="cta">Launch Bot</a>
   </header>
 
-  <main class="container">
-    <section class="features" aria-label="Key Features">
-      <article>
-        <h3>Gift Cards</h3>
-        <p>Instantly purchase a wide variety of gift cards using Bitcoin and other cryptocurrencies — no middlemen.</p>
-      </article>
-      <article>
-        <h3>Mobile Recharge</h3>
-        <p>Recharge your phone on top mobile networks with crypto, safely and quickly.</p>
-      </article>
-      <article>
-        <h3>Peer-to-Peer Trading</h3>
-        <p>Buy and sell gift cards and crypto directly with other users, with secure escrow support.</p>
-      </article>
-      <article>
-        <h3>24/7 Support</h3>
-        <p>Need help? We're available around the clock to assist you with your transactions.</p>
-      </article>
-    </section>
-  </main>
+  <section class="features">
+    <h2>Why PrimeBitCards?</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>Instant Delivery</h3>
+        <p>Get your gift card code within minutes after payment confirmation.</p>
+      </div>
+      <div class="feature">
+        <h3>Top Brands</h3>
+        <p>Amazon, Flipkart, Swiggy, Zomato, and many more — all in one place.</p>
+      </div>
+      <div class="feature">
+        <h3>Crypto Friendly</h3>
+        <p>Pay directly with USDT or other supported coins. No banks needed.</p>
+      </div>
+      <div class="feature">
+        <h3>Reward Points</h3>
+        <p>Earn 1% reward points on every purchase. More shopping, more perks!</p>
+      </div>
+    </div>
+  </section>
 
-  <footer class="disclaimer">
-    <p>PrimeBitCards is a cryptocurrency-based service. Please use responsibly and comply with local regulations. We are not liable for losses due to misuse or third-party interactions.</p>
+  <section class="faq">
+    <h2>FAQs</h2>
+    <div class="faq-item">
+      <h4>Is KYC required?</h4>
+      <p>No KYC, no signup. Just crypto and your Telegram.</p>
+    </div>
+    <div class="faq-item">
+      <h4>How do I pay?</h4>
+      <p>USDT on TRC20 or ERC20 supported. Other tokens coming soon.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Is it safe?</h4>
+      <p>Yes, transactions are private and processed securely.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 PrimeBitCards – Crypto to Gift Card made simple.
   </footer>
 </body>
 </html>
